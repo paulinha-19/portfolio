@@ -1,0 +1,48 @@
+.home {
+    position: relative; 
+    min-height: 100vh; 
+    background-color: rebeccapurple;
+    padding-top: 12rem;
+  }
+
+.home .home-titulo {
+    font-size: 2.75rem;
+}
+
+.home .home-subtitulo {
+    font-size: 1.25rem;
+}
+  
+.home .home-foto {
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.titulo-projetos{
+    font-size: 2.25rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.projeto-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  .projeto-item .projeto-item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(0,0,0);
+  }
+  
+  .projeto-item .projeto-item-hover:hover {
+    opacity: 0.1;
+  }
+  
+  .projeto-item .projeto-item-hover .projeto-item-hover-content {
+    font-size: 1.5rem;
+  }
