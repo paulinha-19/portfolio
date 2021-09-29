@@ -52,103 +52,209 @@
     </header>
 
     <main id="main">
-        <section id="projetos">
+        <section id="projetos" class="section">
             <div class="container">
                 <h2 class="titulo-projetos text-center text-uppercase pb-3">Projetos</h2>
                 <!-- projetos itens-->
                 <div class="row">
-                        <!-- projeto 1-->
-                        <div class="col-4">
-                            <div class="projeto-item mx-auto" data-toggle="modal" data-target="#projetoModal1">
-                                <div
-                                    class="projeto-item-hover d-flex align-items-center justify-content-center h-100 w-100">
-                                </div>
-                                <img class="img-fluid" src="assets/img/perfil.jpg" alt="..." />
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="projetoModal1" tabindex="-1" role="dialog"
-                            aria-labelledby="projetoModal1Label" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="projetoModal1Label">Modal title</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <a href="">Projeto no git</a>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
+                    <!-- projeto 1-->
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-foodbox"
+                                    src="assets/tela projetos/foodbox.png" alt="foodbox" />
+                            </div> <!-- Fim imagem abrir modal -->
 
-                        <!-- Portfolio Item 2-->
-                        <div class="col-4">
-                            <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">Foodbox</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
+                                                2021</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/perfil.jpg" alt="..." />
                             </div>
-                        </div>
-                        <!-- Portfolio Item 3-->
-                        <div class="col-4">
-                            <div class="portfolio-item " data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                    <!-- projeto 2-->
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-clima"
+                                    src="assets/tela projetos/clima.png" alt="projeto-clima" />
+                            </div> <!-- Fim imagem abrir modal -->
+
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">Clima</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
+                                                2021</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/perfil.jpg" alt="..." />
                             </div>
-                        </div>
-                        <!-- Portfolio Item 4-->
-                        <div class="col-4">
-                            <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                    <!-- projeto 3-->
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-relogio"
+                                    src="assets/tela projetos/relogio.png" alt="projeto-relogio" />
+                            </div> <!-- Fim imagem abrir modal -->
+
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">Relógio Digital</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
+                                                2021</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/perfil.jpg" alt="..." />
                             </div>
-                        </div>
-                        <!-- Portfolio Item 5-->
-                        <div class="col-4">
-                            <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                    <!-- projeto 4-->
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-quiz" src="assets/tela projetos/quiz.png"
+                                    alt="projeto-quiz" />
+                            </div> <!-- Fim imagem abrir modal -->
+
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">Quiz com bar progress</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
+                                                2021</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/perfil.jpg" alt="..." />
                             </div>
-                        </div>
-                        <!-- Portfolio Item 6-->
-                        <div class="col-4">
-                            <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                    <!-- projeto 5-->
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-bateria"
+                                    src="assets/tela projetos/bateria.png" alt="projeto-bateria" />
+                            </div> <!-- Fim imagem abrir modal -->
+
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">Bateria virtual</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
+                                                2021</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/perfil.jpg" alt="..." />
+                            </div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                    <!-- projeto 5-->
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-tour"
+                                    src="assets/tela projetos/tour-virtual.png" alt="projeto-tour" />
+                            </div> <!-- Fim imagem abrir modal -->
+
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">Tour virtual</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> /
+                                            <span>Incompleto</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                </div> <!-- fim Row-->
+            </div> <!-- fim container-->
+        </section>
+        <!-- Fim Projetos Section-->
+
+        <!-- Section sobre-->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="titulo-projetos text-center text-uppercase pb-3">Sobre</h2>
+                <div class="row">
+                    <div class="col 4">
+                        <div class="sobre-box">
+                            <div class="sobre-img">
+                                <img class="mb-5" src="assets/img/perfil.jpg" alt="foto-perfil" />
                             </div>
                         </div>
                     </div>
-                </div>
-        </section>
+                </div> <!-- Fim row -->
+            </div> <!-- Fim container-->
 
-        <!-- Portfolio Section-->
+        </section>
+        <!-- Fim Section sobre-->
+
+        <!-- Projetos Modals-->
+        <!-- Inicio Modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="projeto-foodbox">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Projeto 1</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Fim Modal Header -->
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img class="img-fluid"
+                            src="https://devporai.com.br/wp-content/uploads/2021/03/Pagina-de-portfolio.png"
+                            alt="Snow" />
+                        <div class="descricao-modal pt-4 pb-2">
+                            <h4>FoodBox</h4>
+                            <p> Projeto desenvolvido no 1º evento tech driven</p>
+                            <span class="categoria">Desenvolvimento Web</span>
+                        </div>
+                    </div>
+                    <!-- Fim modal-body -->
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <a href="https://github.com/paulinha-19/foodbox" class="btn btn-primary" target="_blank">
+                            Detalhes </a>
+                    </div>
+                    <!-- Fim footer -->
+                </div>
+            </div>
+        </div> <!-- Fim modal -->
+        <!-- Fim Projetos Modals-->
 
     </main>
 
