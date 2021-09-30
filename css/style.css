@@ -13,7 +13,7 @@
     font-size: 1.25rem;
 }
   
-.home .home-foto {
+.home-foto {
     width: 15rem;
     border-radius: 50%;
 }
@@ -27,6 +27,7 @@
     font-size: 2.25rem;
     line-height: 2rem;
     font-weight: bold;
+    padding-bottom: 4rem ;
 }
 
 .projeto-box {
@@ -62,4 +63,26 @@
 }
 .projeto-detalhes .projeto-adendo .projeto-categoria {
   color: #0078ff;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-img img{
+  border-radius: 20%;
+  width: 15rem;
+}
+
+.espaco-linha{
+  line-height: 2rem;
+}
+
+.p-sobre{
+  padding-top: 1rem;
+}
+
+.section-sobre{
+  background-color: #fff;;
 }
