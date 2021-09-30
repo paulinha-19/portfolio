@@ -1,7 +1,8 @@
 .home {
     min-height: 100vh; 
-    background-color: rebeccapurple;
+    background-color: rgba(0, 0, 0, 0.9);
     padding-top: 8rem;
+    opacity: 0.9; 
   }
 
 .home .home-titulo {
@@ -82,7 +83,8 @@
   padding-top: 1rem;
 }
 
-.section-sobre{
+.section-sobre,
+.section-contato{
   background-color: #fff;;
 }
 
@@ -97,6 +99,28 @@
   width: auto;
 }
 
-.habilidades{
+.habilidades,
+.contatos,
+.sobre{
   padding-bottom: 4rem;
+}
+
+.icon-accordion,
+.icon-contato{
+font-size: 2em;
+padding: 0.5em 0;
+}
+
+.section-contato{
+  line-height: 5rem;
+}
+
+ul li{
+  list-style: none;
+}
+
+footer{
+  background-color: #F5F5F5;
+  margin: auto;
+  padding: 0.5em 0;
 }
