@@ -1,8 +1,7 @@
 .home {
-    position: relative; 
     min-height: 100vh; 
     background-color: rebeccapurple;
-    padding-top: 12rem;
+    padding-top: 8rem;
   }
 
 .home .home-titulo {
@@ -85,4 +84,19 @@
 
 .section-sobre{
   background-color: #fff;;
+}
+
+.carousel {
+  max-height: 400px;
+  overflow: hidden;
+  margin: 30px 0;
+
+}
+
+.carousel img {
+  width: auto;
+}
+
+.habilidades{
+  padding-bottom: 4rem;
 }
