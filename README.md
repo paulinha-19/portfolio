@@ -1,5 +1,5 @@
 # Workshop intensivo
-Projeto do workshop intensivo Front-end rápido e fácil com Bootstrap - EBAC
+Desafio do workshop intensivo Front-end rápido e fácil com Bootstrap - EBAC
 
 ## Tecnologias utilizadas
 
