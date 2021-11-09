@@ -61,8 +61,10 @@
   color: #4e4e4e;
   font-size: 0.8rem;
 }
-.projeto-detalhes .projeto-adendo .projeto-categoria {
-  color: #0078ff;
+
+.tecnologias,
+.projeto-categoria{
+  font-weight:600;
 }
 
 .row{
@@ -131,3 +133,4 @@ ul li{
 footer{
 padding-top: 2em;
 }
+
