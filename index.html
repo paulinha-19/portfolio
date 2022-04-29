@@ -17,21 +17,552 @@
         class="adopt-injector"></script>
 </head>
 <style>
-    .hkn-ball-button.svelte-1656hin{
-        position:fixed;bottom:20px;left:20px;width:60px!important;height:60px!important;cursor:pointer;opacity:.5;z-index:9999999990;overflow:hidden!important}
-    .hkn-ball-button.svelte-1656hin:hover{
-        opacity:1;
+    .hkn-ball-button.svelte-1656hin {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 60px !important;
+        height: 60px !important;
+        cursor: pointer;
+        opacity: .5;
+        z-index: 9999999990;
+        overflow: hidden !important
     }
-    .hkn-button-right.svelte-1656hin{
-        right:20px;left:auto;
+
+    .hkn-ball-button.svelte-1656hin:hover {
+        opacity: 1;
     }
-    .hkn-ball-button-circle.svelte-1656hin{
-        box-sizing:border-box;width:55px!important;height:55px!important;overflow:hidden;border-radius:50px;box-shadow:0 1px 3px rgba(0,0,0,.5);
+
+    .hkn-button-right.svelte-1656hin {
+        right: 20px;
+        left: auto;
     }
-    .hkn-ball-button-circle.svelte-1656hin img.svelte-1656hin{
-        width:100%!important;height:auto!important;opacity:1!important;
-    }.hkn-ball-button-circle-be.svelte-1656hin{box-sizing:border-box;width:55px!important;height:55px!important;border-radius:50px;display:flex;justify-items:center;align-items:center}.hkn-ball-button-circle-be.svelte-1656hin img.svelte-1656hin{width:100%!important;height:auto!important;opacity:1!important}.hkn-panel.svelte-sj1ckt{position:fixed;bottom:75px;left:75px;width:300px;height:450px;font-size:11px;border-radius:15px;box-sizing:border-box;padding:20px;display:flex;flex-direction:column;z-index:9999999992;box-shadow:0 3px 6px 0 rgba(0,0,0,.2);user-select:none;font-family:Arial,Helvetica,sans-serif!important}.hkn-panel-right.svelte-sj1ckt{right:75px;left:auto}.hkn-panel-center.svelte-sj1ckt{padding:20px;position:fixed;max-width:300px;max-height:350px;height:calc(100vh - 100px);width:auto;bottom:90px;margin-left:auto;margin-right:auto;left:0;right:0;border-radius:15px}.hkn-panel.svelte-sj1ckt div.svelte-sj1ckt::-webkit-scrollbar{width:8px;border-radius:5px}.hkn-panel.svelte-sj1ckt div.svelte-sj1ckt::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.2);box-shadow:inset 0 0 6px rgba(0,0,0,.2);border-radius:5px}.hkn-panel.svelte-sj1ckt div.svelte-sj1ckt::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.2);border-radius:5px}.hkn-tags-categories.svelte-sj1ckt{max-height:280px;flex-grow:1;overflow-y:auto;text-align:left;flex-direction:column!important}.hkn-adopt-logo.svelte-sj1ckt{width:11px;height:11px}.hkn-close-panel.svelte-sj1ckt{box-sizing:border-box;position:absolute;top:20px;right:20px;width:20px;height:20px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center}.hkn-footer.svelte-sj1ckt{text-align:center;flex-direction:column!important}.hkn-footer.svelte-sj1ckt button.svelte-sj1ckt{width:100%;text-transform:uppercase;font-weight:700;border:none;padding:10px;border-radius:20px;margin-top:10px;cursor:pointer;line-height:1;letter-spacing:0}.hkn-footer.svelte-sj1ckt a.svelte-sj1ckt{text-decoration:none}h3.svelte-sj1ckt{line-height:1.5em;text-align:center;margin:0}.hkn-panel.svelte-sj1ckt h3.svelte-sj1ckt{font-size:13px}.adopt-logo.svelte-sj1ckt{bottom:-3px;position:relative}.adopt-logo.svelte-sj1ckt span.svelte-sj1ckt{position:relative;top:-3px}.hknBar.svelte-oa5gdx{width:100vw;position:fixed;bottom:0;user-select:none;z-index:9999999992;box-sizing:border-box;font-size:11px;line-height:1.5em;padding:0;box-shadow:0 3px 6px 0 rgba(0,0,0,.2);font-family:Arial,Helvetica,sans-serif!important}.hknBar.svelte-oa5gdx a.svelte-oa5gdx{font-weight:700;display:inline-block!important}.hkn-bar-bottom.svelte-oa5gdx{left:0!important;}.hkn-bar-top.svelte-oa5gdx{bottom:auto;left:0!important;top:0;height:85px}.hkn-bar-left.svelte-oa5gdx{bottom:75px;left:75px;border-radius:20px;width:350px}.hkn-bar-right.svelte-oa5gdx{bottom:75px;right:75px;left:auto;border-radius:20px;width:350px}.hkn-bar-center.svelte-oa5gdx{max-width:350px;width:calc(100vw - 40px);bottom:90px;margin-left:auto;margin-right:auto;left:0;right:0;border-radius:15px;position:fixed;flex-wrap:wrap}.hknInner.svelte-oa5gdx{box-sizing:border-box;height:100%;width:100%;display:flex;align-items:center;padding:20px;justify-content:space-between}.hkn-bar-left.svelte-oa5gdx .hknInner.svelte-oa5gdx,.hkn-bar-right.svelte-oa5gdx .hknInner.svelte-oa5gdx,.hkn-bar-center.svelte-oa5gdx .hknInner.svelte-oa5gdx{flex-wrap:wrap}.hknConsentText.svelte-oa5gdx{box-sizing:border-box;min-width:100%;max-width:100%;text-align:left;flex-direction:column!important}.hknConsentText.svelte-oa5gdx small.svelte-oa5gdx{display:inline-block;line-height:16px!important;font-size:11px!important}.hkn-bar-center.svelte-oa5gdx .hknConsentText.svelte-oa5gdx{min-width:100%;max-width:100%;min-height:0;max-height:100%;font-size:13px}.hkn-bar-bottom.svelte-oa5gdx .hknConsentText.svelte-oa5gdx,.hkn-bar-top.svelte-oa5gdx .hknConsentText.svelte-oa5gdx{min-width:70%;max-width:70%;min-height:0;max-height:100%}.hknConsentText.svelte-oa5gdx a.svelte-oa5gdx{text-decoration:underline;font-size:13px}.hknConsentText.svelte-oa5gdx h3.svelte-oa5gdx{letter-spacing:0!important}.hknConsentText.svelte-oa5gdx h3.svelte-oa5gdx:after,.hknConsentText.svelte-oa5gdx h3.svelte-oa5gdx:before{display:none!important}.hknPreferences.svelte-oa5gdx{font-weight:700!important;text-transform:uppercase;text-decoration:none;padding:10px;border-radius:20px;cursor:pointer;font-size:11px;border-radius:20px;min-width:45%;line-height:1;letter-spacing:0;text-align:center!important}.hknAcceptAll.svelte-oa5gdx{font-weight:700!important;text-transform:uppercase;padding:10px;border:none!important;border-radius:20px;cursor:pointer;font-size:11px;min-width:45%;line-height:1;letter-spacing:0;text-align:center!important}.hkn-flex.svelte-oa5gdx{display:flex;justify-content:space-between;width:100%}.hkn-bar-left.svelte-oa5gdx .hkn-flex.svelte-oa5gdx,.hkn-bar-right.svelte-oa5gdx .hkn-flex.svelte-oa5gdx{margin-top:22px}.hkn-bar-center.svelte-oa5gdx .hkn-flex.svelte-oa5gdx{margin-top:12px}.hkn-flex--center.svelte-oa5gdx{display:flex;justify-content:center;width:100%}.hkn-bar-bottom.svelte-oa5gdx .hkn-flex.svelte-oa5gdx,.hkn-bar-top.svelte-oa5gdx .hkn-flex.svelte-oa5gdx{width:auto}.hkn-bar-center.svelte-oa5gdx .hkn-flex.svelte-oa5gdx{flex-wrap:no-wrap}.hkn-bar-bottom.svelte-oa5gdx .hkn-flex.svelte-oa5gdx,.hkn-bar-top.svelte-oa5gdx .hkn-flex.svelte-oa5gdx{width:28%}.hkn-bar-center.svelte-oa5gdx .hkn-flex button.svelte-oa5gdx{max-width:49%;min-width:45%}.hknBar.svelte-oa5gdx h3.svelte-oa5gdx{font-size:0.9rem;margin:0 0 10px;padding:0;line-height:1.25em}.hknBar.svelte-oa5gdx span.svelte-oa5gdx{line-height:2em;padding:0;font-size:0.9rem!important}.hknConsentText.svelte-oa5gdx a.svelte-oa5gdx{font-size:0.9rem}.hknLink.svelte-oa5gdx{font-size:11px;border:0!important;background:0 0!important;font-weight:700!important;text-decoration:underline!important;cursor:pointer;padding:0!important}.adopt-logo.svelte-oa5gdx{color:#00dd80!important;position:absolute;top:25px;right:25px;font-weight:400!important;width:60px;text-align:right;white-space:nowrap;font-size:13px}.adopt-logo.svelte-oa5gdx span.svelte-oa5gdx{top:-3px;position:relative;font-size:13px;text-decoration:underline!important}.hkn-bar-top.svelte-oa5gdx .adopt-logo.svelte-oa5gdx,.hkn-bar-bottom.svelte-oa5gdx .adopt-logo.svelte-oa5gdx{left:13rem;top:1.1rem}.hkn-bar-top.svelte-oa5gdx .adopt-logo--left.svelte-oa5gdx,.hkn-bar-bottom.svelte-oa5gdx .adopt-logo--left.svelte-oa5gdx{left:-7px;top:12px}.hkn-category.svelte-18v3a2x{display:flex;justify-content:space-between;align-items:center;margin:5px 0;flex-wrap:wrap;padding-right:10px}.hkn-tag.svelte-18v3a2x{padding:4px 8px;display:flex;margin:0 0 5px 0;align-items:center;border-radius:13px;width:100%;opacity:.75}.hkn-tag.svelte-18v3a2x:hover{opacity:1}.hkn-tag-title.svelte-18v3a2x{flex-grow:1}.hkn-spacer.svelte-18v3a2x{width:10px;height:1px;margin-bottom:5px}.hkn-spacer-2.svelte-18v3a2x{width:10px;height:1px;margin-bottom:2px}.hkn-cat-title.svelte-18v3a2x{flex-grow:1;font-weight:700;cursor:pointer}.hkn-req.svelte-18v3a2x{opacity:.75}.hkn-desc.svelte-18v3a2x{width:100%;display:block;color:#777;padding:0 10px 0 0}.hkn-desc.svelte-18v3a2x p.svelte-18v3a2x{font-size:9px!important;line-height:12px!important}@media(max-width:768px){.hkn-desc.svelte-18v3a2x{font-size:9px!important;line-height:12px!important}}.hkn-icon.svelte-18v3a2x{width:12px;height:12px;display:inline-block;vertical-align:middle;object-fit:cover!important;margin-right:5px;opacity:.8;margin-top:-4px}.hkn-desc-link.svelte-18v3a2x{font-weight:700;width:100%;display:block;cursor:pointer}.hkn-arrow.svelte-16po4pc{width:8px;height:8px;margin-right:10px;cursor:pointer}.hkn-selector.svelte-1e0w9m1{height:18px;width:40px;border-radius:8px;display:flex;align-items:center;cursor:pointer;opacity:.5}.hkn-selector.svelte-1e0w9m1 div.svelte-1e0w9m1{width:15px;height:15px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:2px}.hkn-sel-active.svelte-1e0w9m1{justify-content:flex-end;opacity:1}.hkn-arrow.svelte-16po4pc{width:8px;height:8px;margin-right:10px;cursor:pointer}
+
+    .hkn-ball-button-circle.svelte-1656hin {
+        box-sizing: border-box;
+        width: 55px !important;
+        height: 55px !important;
+        overflow: hidden;
+        border-radius: 50px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    }
+
+    .hkn-ball-button-circle.svelte-1656hin img.svelte-1656hin {
+        width: 100% !important;
+        height: auto !important;
+        opacity: 1 !important;
+    }
+
+    .hkn-ball-button-circle-be.svelte-1656hin {
+        box-sizing: border-box;
+        width: 55px !important;
+        height: 55px !important;
+        border-radius: 50px;
+        display: flex;
+        justify-items: center;
+        align-items: center
+    }
+
+    .hkn-ball-button-circle-be.svelte-1656hin img.svelte-1656hin {
+        width: 100% !important;
+        height: auto !important;
+        opacity: 1 !important
+    }
+
+    .hkn-panel.svelte-sj1ckt {
+        position: fixed;
+        bottom: 75px;
+        left: 75px;
+        width: 300px;
+        height: 450px;
+        font-size: 11px;
+        border-radius: 15px;
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 9999999992;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+        user-select: none;
+        font-family: Arial, Helvetica, sans-serif !important
+    }
+
+    .hkn-panel-right.svelte-sj1ckt {
+        right: 75px;
+        left: auto
+    }
+
+    .hkn-panel-center.svelte-sj1ckt {
+        padding: 20px;
+        position: fixed;
+        max-width: 300px;
+        max-height: 350px;
+        height: calc(100vh - 100px);
+        width: auto;
+        bottom: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        border-radius: 15px
+    }
+
+    .hkn-panel.svelte-sj1ckt div.svelte-sj1ckt::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 5px
+    }
+
+    .hkn-panel.svelte-sj1ckt div.svelte-sj1ckt::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .2);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, .2);
+        border-radius: 5px
+    }
+
+    .hkn-panel.svelte-sj1ckt div.svelte-sj1ckt::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .2);
+        border-radius: 5px
+    }
+
+    .hkn-tags-categories.svelte-sj1ckt {
+        max-height: 280px;
+        flex-grow: 1;
+        overflow-y: auto;
+        text-align: left;
+        flex-direction: column !important
+    }
+
+    .hkn-adopt-logo.svelte-sj1ckt {
+        width: 11px;
+        height: 11px
+    }
+
+    .hkn-close-panel.svelte-sj1ckt {
+        box-sizing: border-box;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .hkn-footer.svelte-sj1ckt {
+        text-align: center;
+        flex-direction: column !important
+    }
+
+    .hkn-footer.svelte-sj1ckt button.svelte-sj1ckt {
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        line-height: 1;
+        letter-spacing: 0
+    }
+
+    .hkn-footer.svelte-sj1ckt a.svelte-sj1ckt {
+        text-decoration: none
+    }
+
+    h3.svelte-sj1ckt {
+        line-height: 1.5em;
+        text-align: center;
+        margin: 0
+    }
+
+    .hkn-panel.svelte-sj1ckt h3.svelte-sj1ckt {
+        font-size: 13px
+    }
+
+    .adopt-logo.svelte-sj1ckt {
+        bottom: -3px;
+        position: relative
+    }
+
+    .adopt-logo.svelte-sj1ckt span.svelte-sj1ckt {
+        position: relative;
+        top: -3px
+    }
+
+    .hknBar.svelte-oa5gdx {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        user-select: none;
+        z-index: 9999999992;
+        box-sizing: border-box;
+        font-size: 11px;
+        line-height: 1.5em;
+        padding: 0;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+        font-family: Arial, Helvetica, sans-serif !important
+    }
+
+    .hknBar.svelte-oa5gdx a.svelte-oa5gdx {
+        font-weight: 700;
+        display: inline-block !important
+    }
+
+    .hkn-bar-bottom.svelte-oa5gdx {
+        left: 0 !important;
+    }
+
+    .hkn-bar-top.svelte-oa5gdx {
+        bottom: auto;
+        left: 0 !important;
+        top: 0;
+        height: 85px
+    }
+
+    .hkn-bar-left.svelte-oa5gdx {
+        bottom: 75px;
+        left: 75px;
+        border-radius: 20px;
+        width: 350px
+    }
+
+    .hkn-bar-right.svelte-oa5gdx {
+        bottom: 75px;
+        right: 75px;
+        left: auto;
+        border-radius: 20px;
+        width: 350px
+    }
+
+    .hkn-bar-center.svelte-oa5gdx {
+        max-width: 350px;
+        width: calc(100vw - 40px);
+        bottom: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        border-radius: 15px;
+        position: fixed;
+        flex-wrap: wrap
+    }
+
+    .hknInner.svelte-oa5gdx {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-between
+    }
+
+    .hkn-bar-left.svelte-oa5gdx .hknInner.svelte-oa5gdx,
+    .hkn-bar-right.svelte-oa5gdx .hknInner.svelte-oa5gdx,
+    .hkn-bar-center.svelte-oa5gdx .hknInner.svelte-oa5gdx {
+        flex-wrap: wrap
+    }
+
+    .hknConsentText.svelte-oa5gdx {
+        box-sizing: border-box;
+        min-width: 100%;
+        max-width: 100%;
+        text-align: left;
+        flex-direction: column !important
+    }
+
+    .hknConsentText.svelte-oa5gdx small.svelte-oa5gdx {
+        display: inline-block;
+        line-height: 16px !important;
+        font-size: 11px !important
+    }
+
+    .hkn-bar-center.svelte-oa5gdx .hknConsentText.svelte-oa5gdx {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        max-height: 100%;
+        font-size: 13px
+    }
+
+    .hkn-bar-bottom.svelte-oa5gdx .hknConsentText.svelte-oa5gdx,
+    .hkn-bar-top.svelte-oa5gdx .hknConsentText.svelte-oa5gdx {
+        min-width: 70%;
+        max-width: 70%;
+        min-height: 0;
+        max-height: 100%
+    }
+
+    .hknConsentText.svelte-oa5gdx a.svelte-oa5gdx {
+        text-decoration: underline;
+        font-size: 13px
+    }
+
+    .hknConsentText.svelte-oa5gdx h3.svelte-oa5gdx {
+        letter-spacing: 0 !important
+    }
+
+    .hknConsentText.svelte-oa5gdx h3.svelte-oa5gdx:after,
+    .hknConsentText.svelte-oa5gdx h3.svelte-oa5gdx:before {
+        display: none !important
+    }
+
+    .hknPreferences.svelte-oa5gdx {
+        font-weight: 700 !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 11px;
+        border-radius: 20px;
+        min-width: 45%;
+        line-height: 1;
+        letter-spacing: 0;
+        text-align: center !important
+    }
+
+    .hknAcceptAll.svelte-oa5gdx {
+        font-weight: 700 !important;
+        text-transform: uppercase;
+        padding: 10px;
+        border: none !important;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 11px;
+        min-width: 45%;
+        line-height: 1;
+        letter-spacing: 0;
+        text-align: center !important
+    }
+
+    .hkn-flex.svelte-oa5gdx {
+        display: flex;
+        justify-content: space-between;
+        width: 100%
+    }
+
+    .hkn-bar-left.svelte-oa5gdx .hkn-flex.svelte-oa5gdx,
+    .hkn-bar-right.svelte-oa5gdx .hkn-flex.svelte-oa5gdx {
+        margin-top: 22px
+    }
+
+    .hkn-bar-center.svelte-oa5gdx .hkn-flex.svelte-oa5gdx {
+        margin-top: 12px
+    }
+
+    .hkn-flex--center.svelte-oa5gdx {
+        display: flex;
+        justify-content: center;
+        width: 100%
+    }
+
+    .hkn-bar-bottom.svelte-oa5gdx .hkn-flex.svelte-oa5gdx,
+    .hkn-bar-top.svelte-oa5gdx .hkn-flex.svelte-oa5gdx {
+        width: auto
+    }
+
+    .hkn-bar-center.svelte-oa5gdx .hkn-flex.svelte-oa5gdx {
+        flex-wrap: no-wrap
+    }
+
+    .hkn-bar-bottom.svelte-oa5gdx .hkn-flex.svelte-oa5gdx,
+    .hkn-bar-top.svelte-oa5gdx .hkn-flex.svelte-oa5gdx {
+        width: 28%
+    }
+
+    .hkn-bar-center.svelte-oa5gdx .hkn-flex button.svelte-oa5gdx {
+        max-width: 49%;
+        min-width: 45%
+    }
+
+    .hknBar.svelte-oa5gdx h3.svelte-oa5gdx {
+        font-size: 0.9rem;
+        margin: 0 0 10px;
+        padding: 0;
+        line-height: 1.25em
+    }
+
+    .hknBar.svelte-oa5gdx span.svelte-oa5gdx {
+        line-height: 2em;
+        padding: 0;
+        font-size: 0.9rem !important
+    }
+
+    .hknConsentText.svelte-oa5gdx a.svelte-oa5gdx {
+        font-size: 0.9rem
+    }
+
+    .hknLink.svelte-oa5gdx {
+        font-size: 11px;
+        border: 0 !important;
+        background: 0 0 !important;
+        font-weight: 700 !important;
+        text-decoration: underline !important;
+        cursor: pointer;
+        padding: 0 !important
+    }
+
+    .adopt-logo.svelte-oa5gdx {
+        color: #00dd80 !important;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-weight: 400 !important;
+        width: 60px;
+        text-align: right;
+        white-space: nowrap;
+        font-size: 13px
+    }
+
+    .adopt-logo.svelte-oa5gdx span.svelte-oa5gdx {
+        top: -3px;
+        position: relative;
+        font-size: 13px;
+        text-decoration: underline !important
+    }
+
+    .hkn-bar-top.svelte-oa5gdx .adopt-logo.svelte-oa5gdx,
+    .hkn-bar-bottom.svelte-oa5gdx .adopt-logo.svelte-oa5gdx {
+        left: 13rem;
+        top: 1.1rem
+    }
+
+    .hkn-bar-top.svelte-oa5gdx .adopt-logo--left.svelte-oa5gdx,
+    .hkn-bar-bottom.svelte-oa5gdx .adopt-logo--left.svelte-oa5gdx {
+        left: -7px;
+        top: 12px
+    }
+
+    .hkn-category.svelte-18v3a2x {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+        flex-wrap: wrap;
+        padding-right: 10px
+    }
+
+    .hkn-tag.svelte-18v3a2x {
+        padding: 4px 8px;
+        display: flex;
+        margin: 0 0 5px 0;
+        align-items: center;
+        border-radius: 13px;
+        width: 100%;
+        opacity: .75
+    }
+
+    .hkn-tag.svelte-18v3a2x:hover {
+        opacity: 1
+    }
+
+    .hkn-tag-title.svelte-18v3a2x {
+        flex-grow: 1
+    }
+
+    .hkn-spacer.svelte-18v3a2x {
+        width: 10px;
+        height: 1px;
+        margin-bottom: 5px
+    }
+
+    .hkn-spacer-2.svelte-18v3a2x {
+        width: 10px;
+        height: 1px;
+        margin-bottom: 2px
+    }
+
+    .hkn-cat-title.svelte-18v3a2x {
+        flex-grow: 1;
+        font-weight: 700;
+        cursor: pointer
+    }
+
+    .hkn-req.svelte-18v3a2x {
+        opacity: .75
+    }
+
+    .hkn-desc.svelte-18v3a2x {
+        width: 100%;
+        display: block;
+        color: #777;
+        padding: 0 10px 0 0
+    }
+
+    .hkn-desc.svelte-18v3a2x p.svelte-18v3a2x {
+        font-size: 9px !important;
+        line-height: 12px !important
+    }
+
+    @media(max-width:768px) {
+        .hkn-desc.svelte-18v3a2x {
+            font-size: 9px !important;
+            line-height: 12px !important
+        }
+    }
+
+    .hkn-icon.svelte-18v3a2x {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        vertical-align: middle;
+        object-fit: cover !important;
+        margin-right: 5px;
+        opacity: .8;
+        margin-top: -4px
+    }
+
+    .hkn-desc-link.svelte-18v3a2x {
+        font-weight: 700;
+        width: 100%;
+        display: block;
+        cursor: pointer
+    }
+
+    .hkn-arrow.svelte-16po4pc {
+        width: 8px;
+        height: 8px;
+        margin-right: 10px;
+        cursor: pointer
+    }
+
+    .hkn-selector.svelte-1e0w9m1 {
+        height: 18px;
+        width: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        opacity: .5
+    }
+
+    .hkn-selector.svelte-1e0w9m1 div.svelte-1e0w9m1 {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px
+    }
+
+    .hkn-sel-active.svelte-1e0w9m1 {
+        justify-content: flex-end;
+        opacity: 1
+    }
+
+    .hkn-arrow.svelte-16po4pc {
+        width: 8px;
+        height: 8px;
+        margin-right: 10px;
+        cursor: pointer
+    }
 </style>
+
 <body>
     <header id="home">
         <!-- Navbar -->
@@ -130,16 +661,16 @@
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-5">
                         <div class="sobre-img">
-                            <img src="assets/img/perfil.jpg" alt="foto-perfil"/>
+                            <img src="assets/img/perfil.jpg" alt="foto-perfil" />
                         </div>
                     </div>
 
                     <div class="col-md-5">
                         <h4 class="espaco-linha">Paula Soares</h4>
-                        <span>| Estudante de desenvolvimento web front-end |</span>
+                        <span>| Desenvolvedora web front-end Jr. |</span>
                         <p class="lead p-sobre">
                             24 anos, apaixonada por programação e em busca dos meus sonhos, sendo um deles ser
-                            desenvolvedora web front-end Jr com React. Ingressar no
+                            desenvolvedora web front-end Jr. Ingressar no
                             mercado de trabalho e futuramente ser Sr. Quero viver de TI.
                         </p>
                     </div>
@@ -152,223 +683,41 @@
         <section id="habilidades" class="section section-habilidades">
             <div class="container">
                 <h2 class="titulo-projetos text-center text-uppercase">Habilidades</h2>
-                <div class="row">
+                <div class="row text-center">
                     <div class="col">
-                        <div id="accordion">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                            HTML
-                                        </button>
-                                    </h5>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <i class="fab fa-html5 icon-accordion"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>
-                                                    Estudo desde 2019 e a cada dia em busca de ter conhecimento
-                                                    avançado.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--Fim card-body-->
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            CSS
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <i class="fab fa-css3 icon-accordion"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>
-                                                    Estudo desde 2019 e a cada dia em busca de ter conhecimento
-                                                    avançado.
-                                                    Conheço o básico. Através dos estudos diários alcançarei o
-                                                    necessário exigido no
-                                                    mercado de trabalho.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--fim card body-->
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            JavaScript
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <i class="fab fa-js-square icon-accordion"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>
-                                                    Estudo desde 2021. Conheço o básico mais estou estudando para um dia
-                                                    ser avançada em Js.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--fim card body-->
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseFour" aria-expanded="false"
-                                            aria-controls="collapseFour">
-                                            Bootstrap 4
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <i class="fab fa-bootstrap icon-accordion"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>
-                                                    Conheço o básico com experiência prática desde junho de 2021.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--fim card body-->
-                                </div>
-                            </div>
-                            <!--fim card-->
-                            <div class="card">
-                                <div class="card-header" id="headingFive">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseFive" aria-expanded="false"
-                                            aria-controls="collapseFive">
-                                            Firebase
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <img src="https://img.icons8.com/color/48/000000/firebase.png" />
-                                                <i class="icon-accordion"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>
-                                                    Experiência prática com plataforma Firebase (RealtimeDatabase,
-                                                    Storage, Authentication) desde junho de 2021.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--fim card body-->
-                                </div>
-                            </div>
-                            <!--fim card-->
-                            <div class="card">
-                                <div class="card-header" id="headingSix">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseSix" aria-expanded="false"
-                                            aria-controls="collapseSix">
-                                            Git
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseSix" class="collapse" aria-labelledby="headingFive"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <i class="fab fa-git-alt icon-accordion"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>
-                                                    Utilizando com frenquência desde março de 2021.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingSeven">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseSeven" aria-expanded="false"
-                                            aria-controls="collapseSeven">
-                                            Github
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseSeven" class="collapse" aria-labelledby="headingFive"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <i class="fab fa-github icon-accordion"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>
-                                                    Tenho conta desde 2019, porém, comecei a utilizar com frequência em
-                                                    2021. Ter uma lataforma de hospedagem de código-fonte é tudo de bom.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-info" data-bs-container="body"
+                            data-bs-trigger="hover focus" data-bs-content="HTML">
+                            <i class="fab fa-html5 icon-accordion" data-toggle="popover-hover" data-content="HTML">
+                            </i>
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-container="body" data-bs-content="CSS">
+                            <i class="fab fa-css3 icon-accordion" data-toggle="popover-hover" data-content="CSS">
+                            </i>
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-container="body"
+                            data-bs-content="JavaScript">
+                            <i class="fab fa-js-square icon-accordion" data-toggle="popover-hover"
+                                data-content="JavaScript">
+                            </i>
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-container="body" data-bs-content="Bootstrap">
+                            <i class="fab fa-bootstrap icon-accordion" data-toggle="popover-hover"
+                                data-content="Bootstrap">
+                            </i>
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-container="body" data-bs-content="React">
+                            <i class="fa-brands fa-react icon-accordion" data-toggle="popover-hover"
+                                data-content="React"></i>
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-container="body" data-bs-placement="top"
+                            data-bs-content="Git">
+                            <i data-toggle="popover-hover" data-content="Git" class="fab fa-git-alt icon-accordion">
+                            </i>
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-container="body">
+                            <i data-toggle="popover-hover" data-content="Github" class="fab fa-github icon-accordion">
+                            </i>
+                        </button>
                     </div>
                 </div>
                 <!--Fim row-->
@@ -396,9 +745,69 @@
                                         <h3 class="projeto-titulo">Sistema web - Tour virtual</h3>
                                         <div class="projeto-adendo">
                                             <span class="projeto-categoria">Desenvolvimento Web</span> /
-                                            <span>Finalizando</span> <span class="tecnologias">HTML | CSS | JavaScript |
+                                            <span></span> <span class="tecnologias">HTML | CSS | JavaScript |
                                                 Jquery | Firebase | Bootstrap 4</span>
-                                                <p data-toggle="popover-hover" data-content="Projeto desenvolvido para o trabalho de conclusão do curso de Engenharia da Computação. O sistema web tem por objetivo criar uma plataforma de visitação virtual aos ambientes e projetos desenvolvidos na UEMA, Campus Paulo VI.">Sobre o projeto</p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="Projeto desenvolvido para o trabalho de conclusão do curso de Engenharia da Computação. O sistema web tem por objetivo criar uma plataforma de visitação virtual aos ambientes e projetos desenvolvidos na UEMA, Campus Paulo VI.">
+                                                Sobre o projeto
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-todolist"
+                                    src="assets/tela projetos/acme.png" alt="projeto clinica acme" />
+                            </div> <!-- Fim imagem abrir modal -->
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">Clinica ACME</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> /
+                                            <span></span> <span class="tecnologias">React | UseState | UseEffect |
+                                                LocalStorage | JavaScript | Styled Components | React-router-dom</span>
+                                            <p>Acesse o projeto <a href="https://github.com/paulinha-19/crud-pacientes"
+                                                    target="_blank">aqui.</a></p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="Este recurso foi criado como desafio para uma vaga Front-end dev Jr. O objetivo foi desenvolver uma solução web para consultar e cadastrar pacientes.">
+                                                Sobre o projeto</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Fim projeto-box -->
+                    </div> <!-- Fim col-4 -->
+
+                    <div class="col-4">
+                        <div class="projeto-box">
+                            <!-- Imagem para abrir o modal -->
+                            <div class="projeto-img">
+                                <img data-toggle="modal" data-target="#projeto-todolist"
+                                    src="assets/tela projetos/todoflix.png" alt="todoflix" />
+                            </div> <!-- Fim imagem abrir modal -->
+
+                            <div class="projeto-detalhes">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3 class="projeto-titulo">TODOFLIX</h3>
+                                        <div class="projeto-adendo">
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> /
+                                            <span></span> <span class="tecnologias">React | UseState | UseEffect |
+                                                LocalStorage | JavaScript | Styled Components | Bootstrap |
+                                                React-router-dom | Yup</span>
+                                            <p>Acesse o projeto <a
+                                                    href="https://github.com/paulinha-19/projeto-final-mod2"
+                                                    target="_blank">aqui.</a></p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="Projeto em desenvolvimento que tem como objetivo listar filmes (favoritos, adicionados, já vistos), adicionar/editar filmes, adicionar/remover dos favoritos, pesquisar filmes.">
+                                                Sobre o projeto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -422,9 +831,11 @@
                                             <span class="projeto-categoria">Desenvolvimento Web</span> /
                                             <span></span> <span class="tecnologias">React | UseState | UseEffect |
                                                 LocalStorage | JavaScript | Styled Components</span>
-                                                <p>Acesse o projeto <a href="https://github.com/paulinha-19/todo-list-react"
+                                            <p>Acesse o projeto <a href="https://github.com/paulinha-19/todo-list-react"
                                                     target="_blank">aqui.</a></p>
-                                                <p data-toggle="popover-hover" data-content="O objetivo foi desenvolver uma Todo List com adição e remoção de tarefas utilizando React, porém, decidi incrementar o projeto com as opções: alterar, concluir tarefa e feedback das tarefas finalizadas, em aberto e total.">Sobre o projeto</p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="O objetivo foi desenvolver uma Todo List com adição e remoção de tarefas utilizando React, porém, decidi incrementar o projeto com as opções: alterar, concluir tarefa e feedback das tarefas finalizadas, em aberto e total.">
+                                                Sobre o projeto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -446,14 +857,16 @@
                                     <div class="col-sm-8">
                                         <h3 class="projeto-titulo">Previsão de clima</h3>
                                         <div class="projeto-adendo">
-                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
-                                                2021</span> <span class="tecnologias">HTML | CSS | JavaScript |</span>
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>
+                                            </span> <span class="tecnologias">HTML | CSS | JavaScript |</span>
                                             <span class="tecnologias"
                                                 title="Acessa dados meteorológicos atuais de mais de 200.000 cidades">API
                                                 - Current Weather Data</span>
                                             <p>Acesse o projeto <a href="https://paulinha-19.github.io/previsao-clima/"
                                                     target="_blank">aqui.</a></p>
-                                                    <p data-toggle="popover-hover" data-content="Pesquisa o clima de várias cidades através da API Current Weather Data. Criado por B7Web.">Sobre o projeto</p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="Pesquisa o clima de várias cidades através da API Current Weather Data. Criado por B7Web.">
+                                                Sobre o projeto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -475,114 +888,23 @@
                                     <div class="col-sm-8">
                                         <h3 class="projeto-titulo">Desafio layout</h3>
                                         <div class="projeto-adendo">
-                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Out.
-                                                2021</span>
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>
+                                            </span>
                                             <span class="tecnologias">HTML | CSS | Jquery | Bootstrap 4 </span>
                                             <p>Acesse o projeto <a
                                                     href="https://paulinha-19.github.io/desafio-bertholdo/"
                                                     target="_blank">aqui.</a></p>
-                                                    <p data-toggle="popover-hover" data-content="Após me candidatar para uma vaga fui desafiada a criar do zero com Html,Css,Js,Bootstrap um layout que foi disponibilizado em .jpeg.">Sobre o projeto</p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="Após me candidatar para uma vaga fui desafiada a criar do zero com Html,Css,Js,Bootstrap um layout que foi disponibilizado em .jpeg.">
+                                                Sobre o projeto</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div> <!-- Fim projeto-box -->
-                    </div> <!-- Fim col-4 -->
+                    </div>
 
                     <!-- <div class="col-4">
-                        <div class="projeto-box">
-                            <div class="projeto-img">
-                                <img data-toggle="modal" data-target="#projeto-relogio"
-                                    src="assets/tela projetos/relogio.png" alt="projeto-relogio" />
-                            </div>
-                            <div class="projeto-detalhes">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h3 class="projeto-titulo">Relógio Digital</h3>
-                                        <div class="projeto-adendo">
-                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
-                                                2021</span> <span class="tecnologias">HTML | CSS | JavaScript</span>
-                                            <p>Acesse o projeto <a href="https://paulinha-19.github.io/relogio-digital/"
-                                                    target="_blank">aqui.</a></p>                                        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  -->
-
-                    <!--
-                    <div class="col-4">
-                        <div class="projeto-box">
-                            <div class="projeto-img">
-                                <img data-toggle="modal" data-target="#projeto-quiz" src="assets/tela projetos/quiz.png"
-                                    alt="projeto-quiz" />
-                            </div>
-                            <div class="projeto-detalhes">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h3 class="projeto-titulo">Quiz com bar progress</h3>
-                                        <div class="projeto-adendo">
-                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
-                                                2021</span> <span class="tecnologias">HTML | CSS | JavaScript</span>
-                                            <p>Acesse o projeto <a href="https://paulinha-19.github.io/quiz/"
-                                                    target="_blank">aqui.</a></p>
-                                                    <p data-toggle="popover-hover" data-content="Quiz sonbre programação com progress bar. No final do quiz o resultado é mostrado. Criado por B7Web.">Sobre o projeto</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  -->
-
-                    <!-- <div class="col-4">
-                        <div class="projeto-box">
-                            <div class="projeto-img">
-                                <img data-toggle="modal" data-target="#projeto-bateria"
-                                    src="assets/tela projetos/bateria.png" alt="projeto-bateria" />
-                            </div>
-                            <div class="projeto-detalhes">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h3 class="projeto-titulo">Bateria virtual</h3>
-                                        <div class="projeto-adendo">
-                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
-                                                2021</span> <span class="tecnologias">HTML | CSS | JavaScript</span>
-                                            <p>Acesse o projeto <a href="https://paulinha-19.github.io/drum-keyboard/"
-                                                    target="_blank">aqui.</a></p>
-                                                    <p data-toggle="popover-hover" data-content="A idea é simular uma bateria virtual. Ao clicar em teclas especificas (q,w,e,a,s,d,z,x,c) do teclado o som é emitido. Criado por B7Web.">Sobre o projeto</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> -->
-
-                    <!-- <div class="col-4">
-                        <div class="projeto-box">
-                            <div class="projeto-img">
-                                <img data-target="#projeto-bateria"
-                                    src="assets/tela projetos/cadastro-usuario.png" alt="projeto-login" />
-                            </div>
-                            <div class="projeto-detalhes">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h3 class="projeto-titulo">Tela cadastro usuário</h3>
-                                        <div class="projeto-adendo">
-                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Out.
-                                                2021</span> <span class="tecnologias">HTML | CSS | Bootstrap 4</span>
-                                            <p>Acesse o projeto <a href="https://paulinha-19.github.io/form-cadastro/"
-                                                    target="_blank">aqui.</a></p>
-                                                    <p data-toggle="popover-hover" title="" data-content="Layout de cadastro com Html, Css e Bootstrap 4.">Sobre o projeto</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> -->
-
-                    <!-- projeto 9-->
-                    <div class="col-4">
                         <div class="projeto-box">
                             <div class="projeto-img">
                                 <img data-toggle="modal" data-target="#projeto-crud-php"
@@ -599,13 +921,15 @@
                                             <p>Projeto em desenvolvimento <a
                                                     href="https://paulinha-19.github.io/form-cadastro/"
                                                     target="_blank"></a></p>
-                                                    <p data-toggle="popover-hover" data-content="Projeto em desenvolvimento para aprimoramento do meu conhecimento em PHP e MySQL. O objetivo é criar um sistema de login/logout com perfil do usuário e um crud de produtos. Na Home do sistema deverá ter a opção de cadastrar, alterar e excluir um produto. Os dados deverão ser apresentados em uma tabela. No perfil contém detalhes do usuário logado.">Sobre o projeto</p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="Projeto em desenvolvimento para aprimoramento do meu conhecimento em PHP e MySQL. O objetivo é criar um sistema de login/logout com perfil do usuário e um crud de produtos. Na Home do sistema deverá ter a opção de cadastrar, alterar e excluir um produto. Os dados deverão ser apresentados em uma tabela. No perfil contém detalhes do usuário logado.">
+                                                Sobre o projeto</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                    </div>
+                        </div>
+                    </div> -->
 
                     <!-- projeto 3-->
                     <div class="col-4">
@@ -621,11 +945,13 @@
                                     <div class="col-sm-8">
                                         <h3 class="projeto-titulo">Foodbox</h3>
                                         <div class="projeto-adendo">
-                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span>Ago.
-                                                2021</span> <span class="tecnologias">HTML | CSS | JavaScript</span>
+                                            <span class="projeto-categoria">Desenvolvimento Web</span> / <span></span>
+                                            <span class="tecnologias">HTML | CSS | JavaScript</span>
                                             <p>Acesse o projeto <a href="https://paulinha-19.github.io/foodbox/"
                                                     target="_blank">aqui.</a></p>
-                                                    <p data-toggle="popover-hover" data-content="Seleciona os produtos e no final é enviado para o whatsapp através da api.whatsapp. Desenvolvido no 1º evento tech driven.">Sobre o projeto</p>
+                                            <p data-toggle="popover-hover"
+                                                data-content="Seleciona os produtos e no final é enviado para o whatsapp através da api.whatsapp. Desenvolvido no 1º evento tech driven.">
+                                                Sobre o projeto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -687,8 +1013,7 @@
                         <h4 class="espaco-linha">Estágio extracurricular em Tecnologia da Informação</h4>
                         <span>Ministério Público do Trabalho - MPT/MA</span>
                         <p class="lead p-sobre">
-                            Desenvolvimento de sistemas
-                            e sites; Suporte a usuários e redes de computadores.
+                            Suporte a usuários
                         </p>
                     </div>
                 </div> <!-- Fim row -->
@@ -736,7 +1061,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
